@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Raleway:wght@200;500;600;700;800;900&display=swap");
-
-* {
+/* 
+.container {
   --text: "#fff";
   --background: "#060606";
   --primary: "#3cf";
@@ -9,7 +9,7 @@
   --highlight: "#29112c";
   --gray: "#999";
   --purple: "#c0f";
-}
+} */
 
 .nav {
   width: 100%;
