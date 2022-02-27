@@ -75,8 +75,21 @@ COLORS:
   align-items: center;
 }
 
-.pointer {
-  transform: rotate(180deg);
+.card,
+.cardReverse {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 12rem 0;
+  gap: 2rem;
+}
+
+.card {
+  flex-direction: row;
+}
+
+.cardReverse {
+  flex-direction: row-reverse;
 }
 
 .socialIcons {
@@ -96,32 +109,4 @@ COLORS:
 
 .socialIcons a:hover {
   color: #3cf;
-}
-
-.footer {
-  height: 2rem;
-  background-color: white;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 1rem;
-}
-
-.card,
-.cardReverse {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 12rem 0;
-  gap: 2rem;
-}
-
-.card {
-  flex-direction: row;
-}
-
-.cardReverse {
-  flex-direction: row-reverse;
 }

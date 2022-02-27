@@ -3,6 +3,7 @@ import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import { Card } from "../src/components/Card";
 import { Navigation } from "../src/components/Navigation";
+import { Footer } from "../src/components/Footer";
 import clearUIPreview from "../public/images/clearUI.png";
 import noteshubPreview from "../public/images/noteshub.png";
 import ezHabitPreview from "../public/images/ezHabit.png";
@@ -23,8 +24,8 @@ export default function Home() {
         <header className={styles.header}>
           <div className={styles.headerText}>
             <div>Hi,</div>
-            <div>I&#39;m <span className={styles.highlight}>Akshita Saini</span>.</div>
-            <div>I&#39;m a <span className={styles.darkHighlight}>developer</span>!</div>
+            <div>{`I'm`}<span className={styles.highlight}>Akshita Saini</span>.</div>
+            <div>{`I'm`} a <span className={styles.darkHighlight}>developer</span>!</div>
           </div>
           <div>
             <Image src="/images/profile.jpg" alt="Akshita's Profile Pic" priority="true" width={500} height={500}/>
@@ -73,9 +74,7 @@ export default function Home() {
           </div>
         </section>
 
-        <footer className={styles.footer}>
-          Made with love <Image className='heart' src="/icons/heart.svg" alt="heart" height={18} width={18}/> by Akshita 
-        </footer>
+        <Footer />
       </main>
     </div>
   )
