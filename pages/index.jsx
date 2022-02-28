@@ -33,9 +33,9 @@ export default function Home() {
         </header>
 
         <section className={styles.sectionOne}>
-          <div className={styles.sectionOneHeading}>
+          <h2 className={styles.sectionOneHeading}>
             <Image  src="/icons/projects.svg" alt="projects" width={64} height={64}/><span>projects.</span>
-          </div>
+          </h2>
           <Card 
             imageURL={clearUIPreview} 
             projectName="Clear UI"  
