@@ -1,14 +1,24 @@
 .cardImageContainer {
   border-radius: 1.5rem;
-  overflow: hidden;
+  position: relative;
+}
+
+.cardImageDesign {
+  height: 300px;
+  width: 500px;
+  background-color: #46254b;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(10deg);
+  border-radius: 2rem;
+  opacity: 0.5;
 }
 
 .cardImage {
-  transition: all 0.5s;
-}
-
-.cardImage:hover {
-  transform: scale(1.05);
+  transition: all 0.75s;
+  border-radius: 2rem;
+  z-index: 1;
 }
 
 .cardHeading {
@@ -19,54 +29,68 @@
   align-items: center;
   margin-bottom: 1rem;
   font-family: "Montserrat", sans-serif;
+  text-align: left;
 }
 
 .cardBody {
-  padding: 1rem;
-  width: 500px;
-}
-
-.btn,
-.btnLight {
-  padding: 1rem 3rem;
-  font-weight: 600;
-  border-radius: 0.3rem;
-  width: 50%;
-  text-align: center;
-  transition: all 0.5s;
-}
-
-.btnLight {
-  color: white;
-  border: 1px solid currentColor;
+  padding: 2.5rem;
+  width: 450px;
 }
 
 .btn {
+  padding: 1rem 3rem;
+  font-weight: 600;
+  border-radius: 0.3rem;
+  text-align: center;
+  transition: all 0.5s;
   background-color: #3cf;
   color: black;
   border: 1px solid #3cf;
 }
 
-.btn:hover,
-.btnLight:hover {
-  box-shadow: 0 0.6rem 0.5rem rgba(0, 0, 0, 0.12);
-}
-
 .btn:hover {
+  box-shadow: 0 0.6rem 0.5rem rgba(0, 0, 0, 0.12);
   background-color: rgb(43, 168, 209);
 }
 
-.btnLight:hover {
-  background-color: #261029;
+.githubBtnIcon {
+  opacity: 0.5;
+  transition: all 0.5s;
+}
+
+.githubBtnIcon:hover {
+  opacity: 1;
 }
 
 .btnGroup {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 0.2rem;
+  gap: 0.5rem;
 }
 
 .cardText {
   margin-bottom: 2rem;
+  text-align: left;
+}
+
+@media only screen and (max-width: 660px) {
+  .cardImageDesign {
+    height: 0;
+    width: 0;
+  }
+
+  .cardHeading {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .cardBody {
+    padding: 2rem;
+    width: 400px;
+  }
+
+  .cardText {
+    margin-bottom: 1.6rem;
+  }
 }

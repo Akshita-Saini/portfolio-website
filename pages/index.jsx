@@ -4,7 +4,7 @@ import styles from '../styles/Home.module.css';
 import { Card } from "../src/components/Card";
 import { Navigation } from "../src/components/Navigation";
 import { Footer } from "../src/components/Footer";
-import clearUIPreview from "../public/images/clearUI.png";
+import clearUIPreview from "../public/images/componentLib.png";
 import noteshubPreview from "../public/images/noteshub.png";
 import ezHabitPreview from "../public/images/ezHabit.png";
 
@@ -24,10 +24,10 @@ export default function Home() {
         <header className={styles.header}>
           <div className={styles.headerText}>
             <div>Hi,</div>
-            <div>{`I'm`}<span className={styles.highlight}>Akshita Saini</span>.</div>
-            <div>{`I'm`} a <span className={styles.darkHighlight}>developer</span>!</div>
+            <div>{`I'm `}<span className={styles.highlight}>Akshita Saini</span>.</div>
+            <div>{`I'm a `} <span className={styles.darkHighlight}>developer</span>!</div>
           </div>
-          <div>
+          <div className={styles.headerImageContainer}>
             <Image src="/images/profile.jpg" alt="Akshita's Profile Pic" priority="true" width={500} height={500}/>
           </div>
         </header>
@@ -42,7 +42,7 @@ export default function Home() {
             projectURL="https://clear-ui.netlify.app/"
             githubURL="https://github.com/Akshita-Saini/Clear-UI"
             projectDesc={`A CSS component library with components that can be composed to build any design, directly in your markup. It's easy to customize and use.`}
-            className={styles.card}
+            cardClass={styles.card}
           />
           <Card 
             imageURL={noteshubPreview} 
@@ -50,7 +50,7 @@ export default function Home() {
             projectURL="https://noteshub.netlify.app/"
             githubURL="https://github.com/Akshita-Saini/noteshub"
             projectDesc={`A front-end only note-taking app made using React. Supports create, edit and delete note. The user may also tag notes.`}
-            className={styles.cardReverse}
+            cardClass={styles.cardReverse}
           />
           <Card 
             imageURL={ezHabitPreview} 
@@ -58,7 +58,7 @@ export default function Home() {
             projectURL="https://ezhabit.netlify.app/"
             githubURL="https://github.com/Akshita-Saini/ezhabit"
             projectDesc={`A gamified Habit tracking app created using ReactJS, TypeScript, Node.js, Express and MongoDB. Work on this is ongoing!`}
-            className={styles.card}
+            cardClass={styles.card}
           />
         </section>
 

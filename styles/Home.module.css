@@ -110,3 +110,59 @@ COLORS:
 .socialIcons a:hover {
   color: #3cf;
 }
+
+@media only screen and (max-width: 1230px) {
+  .header {
+    padding: 2rem 4rem;
+    height: calc(100vh - 4.8rem);
+  }
+
+  .headerText {
+    font-size: 3.2rem;
+  }
+
+  .headerImageContainer {
+    max-height: 400px;
+    max-width: 400px;
+  }
+
+  .card,
+  .cardReverse {
+    flex-direction: column;
+  }
+
+  .sectionOne,
+  .sectionTwo {
+    padding: 3.6rem 4.8rem;
+  }
+
+  .card,
+  .cardReverse {
+    margin-bottom: 6rem;
+    gap: 2rem;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .headerText {
+    font-size: 2.6rem;
+  }
+
+  .sectionOne,
+  .sectionTwo {
+    padding: 2.8rem 3.6rem;
+  }
+
+  .sectionOneHeading,
+  .sectionTwoHeading {
+    margin: 3.6rem 0;
+    font-size: 2.6rem;
+  }
+
+  .socialIcons {
+    max-width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+}
